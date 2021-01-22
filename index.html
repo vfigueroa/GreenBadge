@@ -2,7 +2,8 @@
 <html>
   <body>
   
-  <p id ='date'>-</p>
+    <p id ='date'>-</p>
+    <p id ='test'></p>
   
   <style>
     body {
@@ -27,6 +28,8 @@
     var time = today.getHours() + ":" + today.getMinutes();
     var dateTime = date+' '+time;
     document.getElementById('date').innerHTML = dateTime;
+    var name = 'test123';
+    document.getElementById('test').innerHTML = name;
   </script>
   
   </body>
