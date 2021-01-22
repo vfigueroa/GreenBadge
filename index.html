@@ -3,8 +3,8 @@
   <body>
   
     <h1 id="date"></h1>
-    <h2 id="survey">test 123</h2>
-    <h3 id="lab">test abc</h3>
+    <h2 id="survey"></h2>
+    <h3 id="lab"></h3>
     
   
   <style>
@@ -57,7 +57,15 @@
     }
     var time = h + ":" + today.getMinutes() + " " + t;
     var dateTime = date+' '+time;
+ 
     document.getElementById("date").innerHTML = dateTime;
+    
+    var surveyDate = (today.getMonth()+1)+'/'+(today.getDate() + 1)+'/'+today.getFullYear()+' '+ "10:00 AM";
+    var labDate = (today.getMonth()+1)+'/'+(today.getDate() + 3)+'/'+today.getFullYear()+' '+ "11:00 PM";
+    
+    document.getElementById("survey").innerHTML = surveyDate;
+    document.getElementById("lab").innerHTML = labDate;
+
   </script>
   
   </body>
