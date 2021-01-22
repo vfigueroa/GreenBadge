@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
-<body>
-  <script>
-    var today = new Date();
-    var date = today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear();
-    var time = today.getHours() + ":" + today.getMinutes();
-    var dateTime = date+' '+time;
-    document.getElementById('date').innerHTML = dateTime.toString();
-  </script>
+  <body>
   
   <p id ='date'>-</p>
+  
   <style>
     body {
       background-image: url('GreenBadgeBG.jpeg');
@@ -27,5 +21,13 @@
     }
   </style>
 
-</body>
+  <script>
+    var today = new Date();
+    var date = today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear();
+    var time = today.getHours() + ":" + today.getMinutes();
+    var dateTime = date+' '+time;
+    document.getElementById('date').innerHTML = dateTime;
+  </script>
+  
+  </body>
 </html>
