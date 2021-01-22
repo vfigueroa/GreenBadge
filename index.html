@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <div> <b>1/21/2021 8:55 PM</b> </div>
-<style>
-  body {
-    background-image: url('GreenBadgeBG.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: cover;
-  }
-  div {
-    font-size: 4em;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding-top: 200px;
-    color: white;
-  }
-</style>
+  <script>
+    var today = new Date();
+    var date = today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear();
+    var time = today.getHours() + ":" + today.getMinutes();
+    var dateTime = date+' '+time;
+  </script>
+  
+  <div> <b>datetime</b> </div>
+  <style>
+    body {
+      background-image: url('GreenBadgeBG.jpeg');
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: cover;
+    }
+    div {
+      font-size: 4em;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding-top: 200px;
+      color: white;
+    }
+  </style>
 
 </body>
 </html>
