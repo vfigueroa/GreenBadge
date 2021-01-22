@@ -26,8 +26,8 @@
     var date = (today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear();
     var h = today.getHours();
     var t = "AM";
-    if (h >= 12) {
-      h = hh - 12;
+    if (h > 12) {
+      h = h - 12;
       t = "PM";
     }
     if (h == 0) {
